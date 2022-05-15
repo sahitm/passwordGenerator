@@ -3,8 +3,7 @@
 }
 
 body{
-  margin-left: 25%;
-  margin-top: 10%;
+  margin: 8%;
   background: #1F2937;
   color: white;
   font-family: 'Karla';
@@ -32,17 +31,20 @@ body{
 }
 
 #passwords{
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
+  justify-content: start;
 }
 
 
 div {
-  width: 211px;
-  height: 39px;
+  width: 200px;
+  height: 50px;
   left: 52px;
   top: 399px;
   background: #273549;
   border-radius: 6px;
-  margin: 5vh;
+  margin: 10px;
 }
