@@ -30,21 +30,52 @@ function randomPassword(){
     return randomstr
 }
 
-function copyDivToClipboard() {
-    var range = document.createRange();
-    range.selectNode(document.getElementById("passbox1"));
-    window.getSelection().removeAllRanges(); // clear current selection
-    window.getSelection().addRange(range); // to select text
-    document.execCommand("copy");
-    window.getSelection().removeAllRanges();// to deselect
+function copyDivToClipboard1() {
+  
+  var range = document.createRange();
+  range.selectNode(document.getElementById("passbox1"));
+  window.getSelection().removeAllRanges();     
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+
 }
 
-let copiedBox = document.querySelector("#passbox1") 
-copiedBox.addEventListener("click",box)
+function copyDivToClipboard2() {
+  
+  var range = document.createRange();
+  range.selectNode(document.getElementById("passbox2"));
+  window.getSelection().removeAllRanges();     
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();// to deselect
 
-function box(){
-    this.classList.add("selected");
 }
+
+function copyDivToClipboard3() {
+  
+  var range = document.createRange();
+  range.selectNode(document.getElementById("passbox3"));
+  window.getSelection().removeAllRanges();     
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();// to deselect
+
+}
+
+function copyDivToClipboard4() {
+  
+  var range = document.createRange();
+  range.selectNode(document.getElementById("passbox4"));
+  window.getSelection().removeAllRanges();     
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();// to deselect
+
+}
+
+
+
 
 greenbutton.addEventListener("click", passwordBoxes);
 
