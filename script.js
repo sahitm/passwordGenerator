@@ -30,52 +30,16 @@ function randomPassword(){
     return randomstr
 }
 
-function copyDivToClipboard1() {
+function copyDivToClipboard(passbox) {
   
   var range = document.createRange();
-  range.selectNode(document.getElementById("passbox1"));
+  range.selectNode(document.getElementById(passbox));
   window.getSelection().removeAllRanges();     
   window.getSelection().addRange(range); 
   document.execCommand("copy");
   window.getSelection().removeAllRanges();
 
 }
-
-function copyDivToClipboard2() {
-  
-  var range = document.createRange();
-  range.selectNode(document.getElementById("passbox2"));
-  window.getSelection().removeAllRanges();     
-  window.getSelection().addRange(range); // to select text
-  document.execCommand("copy");
-  window.getSelection().removeAllRanges();// to deselect
-
-}
-
-function copyDivToClipboard3() {
-  
-  var range = document.createRange();
-  range.selectNode(document.getElementById("passbox3"));
-  window.getSelection().removeAllRanges();     
-  window.getSelection().addRange(range); // to select text
-  document.execCommand("copy");
-  window.getSelection().removeAllRanges();// to deselect
-
-}
-
-function copyDivToClipboard4() {
-  
-  var range = document.createRange();
-  range.selectNode(document.getElementById("passbox4"));
-  window.getSelection().removeAllRanges();     
-  window.getSelection().addRange(range); // to select text
-  document.execCommand("copy");
-  window.getSelection().removeAllRanges();// to deselect
-
-}
-
-
-
 
 greenbutton.addEventListener("click", passwordBoxes);
 
