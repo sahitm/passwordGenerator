@@ -1,5 +1,5 @@
 *{
-  margin: 0;
+  margin: 10px;
 }
 
 body{
@@ -31,6 +31,8 @@ body{
 }
 
 #passwords{
+
+  width:80%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -47,4 +49,8 @@ div {
   background: #273549;
   border-radius: 6px;
   margin: 10px;
+}
+
+.selected {
+  border: 1px solid black;
 }

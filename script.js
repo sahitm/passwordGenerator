@@ -30,7 +30,24 @@ function randomPassword(){
     return randomstr
 }
 
+function copyDivToClipboard() {
+    var range = document.createRange();
+    range.selectNode(document.getElementById("passbox1"));
+    window.getSelection().removeAllRanges(); // clear current selection
+    window.getSelection().addRange(range); // to select text
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();// to deselect
+}
+
+let copiedBox = document.querySelector("#passbox1") 
+copiedBox.addEventListener("click",box)
+
+function box(){
+    this.classList.add("selected");
+}
 
 greenbutton.addEventListener("click", passwordBoxes);
- 
+
+
+
 
